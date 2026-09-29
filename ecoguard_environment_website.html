@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoGuard — Protect Our Planet</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--green:#159957;--dark:#073b2a;--light:#eafff2;--lime:#b7f36b;--blue:#39a9db}
+body{font-family:Arial,Helvetica,sans-serif;background:#f4fff7;color:#143b2b;line-height:1.6}
+header{position:sticky;top:0;z-index:20;background:rgba(5,45,31,.94);backdrop-filter:blur(8px);color:#fff;padding:14px 6%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:1.35rem;font-weight:800}.logo span{color:var(--lime)}
+nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:.9rem}
+.hero{min-height:82vh;padding:80px 7%;display:flex;align-items:center;background:linear-gradient(120deg,rgba(3,48,32,.88),rgba(15,125,72,.72)),url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1800&q=85') center/cover;color:white}
+.hero-content{max-width:700px}.tag{display:inline-block;background:rgba(183,243,107,.18);border:1px solid rgba(183,243,107,.5);padding:7px 13px;border-radius:30px;margin-bottom:18px}
+h1{font-size:clamp(2.4rem,7vw,5.2rem);line-height:1.02;margin-bottom:20px}
+.hero p{font-size:1.1rem;max-width:600px;margin-bottom:28px}
+.btn{border:0;border-radius:30px;padding:13px 21px;font-weight:700;cursor:pointer;background:var(--lime);color:#12351f;text-decoration:none;display:inline-block;margin:4px}
+.btn.alt{background:transparent;color:white;border:1px solid white}
+section{padding:70px 7%}.section-title{text-align:center;max-width:750px;margin:0 auto 35px}
+.section-title h2{font-size:2.2rem;color:var(--dark)}.section-title p{color:#527061}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:white;border-radius:20px;padding:25px;box-shadow:0 8px 30px rgba(11,70,40,.08);border:1px solid #ddf3e4}
+.icon{font-size:2.4rem;margin-bottom:10px}.card h3{margin-bottom:7px;color:var(--dark)}
+.stat-wrap{background:#073b2a;color:white}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:20px;text-align:center}.stat strong{display:block;font-size:2.4rem;color:var(--lime)}
+.game-area{background:#eafff2;border-radius:25px;padding:25px;max-width:900px;margin:auto;box-shadow:0 10px 30px rgba(0,80,40,.08)}
+.game-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+.badge{background:#fff;padding:8px 13px;border-radius:20px;font-weight:700}
+.choice-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-top:18px}
+.choice{background:white;border:2px solid #d7eee0;border-radius:15px;padding:18px;cursor:pointer;font-size:1rem;font-weight:700}
+.choice:hover{border-color:var(--green);transform:translateY(-2px)}
+.feedback{margin-top:18px;font-weight:700;min-height:30px}
+#quizQuestion{font-size:1.25rem;font-weight:700}
+.bin{min-height:180px;display:flex;align-items:center;justify-content:center;text-align:center}
+.bin span{font-size:3rem;display:block}.bin small{display:block}
+.cta{text-align:center;background:linear-gradient(135deg,#b7f36b,#42d392)}
+footer{background:#052d20;color:#ccebd9;text-align:center;padding:30px 7%}
+@media(max-width:650px){nav{display:none}.hero{min-height:88vh;padding:60px 6%}section{padding:55px 6%}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🌿 Eco<span>Guard</span></div>
+  <nav>
+    <a href="#learn">Learn</a><a href="#games">Games</a><a href="#actions">Actions</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-content">
+    <div class="tag">🌎 Small actions. Big impact.</div>
+    <h1>Protect Nature.<br>Protect Our Future.</h1>
+    <p>Discover simple ways to care for forests, oceans, wildlife, air and water — and learn through fun interactive games.</p>
+    <a class="btn" href="#games">🎮 Play Eco Games</a>
+    <a class="btn alt" href="#learn">🌱 Explore</a>
+  </div>
+</section>
+
+<section id="learn">
+  <div class="section-title">
+    <h2>Why Our Planet Needs Us</h2>
+    <p>Nature gives us clean air, fresh water, food and countless resources. Protecting it is everyone's responsibility.</p>
+  </div>
+  <div class="cards">
+    <div class="card"><div class="icon">🌳</div><h3>Protect Forests</h3><p>Plant trees, reduce paper waste and protect habitats for wildlife.</p></div>
+    <div class="card"><div class="icon">💧</div><h3>Save Water</h3><p>Turn off taps, repair leaks and use water thoughtfully every day.</p></div>
+    <div class="card"><div class="icon">♻️</div><h3>Reduce Waste</h3><p>Reduce, reuse and recycle. Choose reusable products whenever possible.</p></div>
+    <div class="card"><div class="icon">🐘</div><h3>Protect Wildlife</h3><p>Respect wild habitats and never buy products made from endangered animals.</p></div>
+  </div>
+</section>
+
+<section class="stat-wrap">
+  <div class="section-title">
+    <h2 style="color:white">Every Choice Counts</h2>
+    <p style="color:#ccebd9">Environmental awareness starts with everyday decisions.</p>
+  </div>
+  <div class="stats">
+    <div class="stat"><strong>3R</strong>Reduce • Reuse • Recycle</div>
+    <div class="stat"><strong>1🌳</strong>Tree can support an ecosystem</div>
+    <div class="stat"><strong>💧</strong>Every drop matters</div>
+    <div class="stat"><strong>∞</strong>Nature needs our care</div>
+  </div>
+</section>
+
+<section id="games">
+  <div class="section-title">
+    <h2>🎮 Eco Games</h2>
+    <p>Learn while you play. Your score shows how much you know about protecting our planet.</p>
+  </div>
+
+  <div class="game-area">
+    <div class="game-head">
+      <div class="badge">🏆 Eco Score: <span id="score">0</span></div>
+      <div class="badge">Question <span id="qnum">1</span>/5</div>
+    </div>
+    <div id="quizQuestion"></div>
+    <div class="choice-grid" id="choices"></div>
+    <div class="feedback" id="feedback"></div>
+    <button class="btn" id="nextBtn" style="display:none">Next Question →</button>
+  </div>
+
+  <div style="height:25px"></div>
+
+  <div class="game-area">
+    <h2>♻️ Waste Sorting Challenge</h2>
+    <p id="wasteText" style="margin-top:8px">Where should a plastic bottle go?</p>
+    <div class="choice-grid">
+      <button class="choice" onclick="sortWaste('recycle')">♻️ Recycling</button>
+      <button class="choice" onclick="sortWaste('organic')">🍎 Organic Waste</button>
+      <button class="choice" onclick="sortWaste('general')">🗑️ General Waste</button>
+    </div>
+    <div class="feedback" id="wasteFeedback"></div>
+  </div>
+</section>
+
+<section id="actions">
+  <div class="section-title">
+    <h2>🌱 Take the Eco Challenge</h2>
+    <p>Choose one action you can start today.</p>
+  </div>
+  <div class="cards">
+    <div class="card"><div class="icon">🚰</div><h3>Save Water</h3><p>Take shorter showers and close the tap while brushing.</p></div>
+    <div class="card"><div class="icon">🚲</div><h3>Travel Green</h3><p>Walk, cycle or use public transport when practical.</p></div>
+    <div class="card"><div class="icon">🥤</div><h3>Go Reusable</h3><p>Carry a reusable bottle or bag instead of single-use items.</p></div>
+    <div class="card"><div class="icon">🌱</div><h3>Grow Green</h3><p>Plant and care for native plants that support local biodiversity.</p></div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Be the Change 🌍</h2>
+  <p style="margin:10px auto 20px;max-width:650px">The planet doesn't need a few perfect people. It needs millions of people making better choices.</p>
+  <button class="btn" onclick="alert('🌱 Great choice! Start with one eco-friendly action today.')">I Choose to Help 🌿</button>
+</section>
+</main>
+
+<footer>
+  <p>🌿 EcoGuard — Awareness today. A healthier planet tomorrow.</p>
+  <p style="font-size:.85rem;margin-top:8px">Educational project • Protect nature • Reduce waste • Respect wildlife</p>
+</footer>
+
+<script>
+const quiz=[
+ {q:"Which action helps reduce plastic pollution?",a:["Using a reusable bottle","Using more plastic bags","Throwing plastic on the ground"],c:0},
+ {q:"Which of these is a renewable source of energy?",a:["Coal","Solar energy","Petrol"],c:1},
+ {q:"What do the 3Rs stand for?",a:["Reduce, Reuse, Recycle","Run, Rest, Repeat","Remove, Replace, Repair"],c:0},
+ {q:"Which habit helps save electricity?",a:["Leaving lights on","Turning off unused lights","Opening the fridge repeatedly"],c:1},
+ {q:"Why are forests important?",a:["They provide habitats and help regulate climate","They create plastic","They increase litter"],c:0}
+];
+let qi=0,score=0;
+function loadQuiz(){
+ document.getElementById('qnum').textContent=qi+1;
+ document.getElementById('quizQuestion').textContent=quiz[qi].q;
+ const box=document.getElementById('choices');box.innerHTML='';
+ quiz[qi].a.forEach((x,i)=>{
+  const b=document.createElement('button');b.className='choice';b.textContent=x;
+  b.onclick=()=>answer(i);box.appendChild(b);
+ });
+ document.getElementById('feedback').textContent='';
+ document.getElementById('nextBtn').style.display='none';
+}
+function answer(i){
+ const buttons=document.querySelectorAll('#choices .choice');
+ buttons.forEach(b=>b.disabled=true);
+ const f=document.getElementById('feedback');
+ if(i===quiz[qi].c){score+=10;f.textContent='✅ Correct! +10 Eco Points';}
+ else f.textContent='🌱 Not quite — learn and try the next one!';
+ document.getElementById('score').textContent=score;
+ document.getElementById('nextBtn').style.display='inline-block';
+}
+document.getElementById('nextBtn').onclick=()=>{
+ qi++;
+ if(qi<quiz.length) loadQuiz();
+ else{
+  document.getElementById('quizQuestion').textContent='🎉 Quiz complete! Your Eco Score: '+score+'/50';
+  document.getElementById('choices').innerHTML='<button class="btn" onclick="location.reload()">Play Again</button>';
+  document.getElementById('feedback').textContent='Keep learning and turn your knowledge into action!';
+  document.getElementById('nextBtn').style.display='none';
+ }
+};
+const wastes=[
+ ["an apple peel","organic","🍎"],
+ ["a clean plastic bottle","recycle","🥤"],
+ ["a cardboard box","recycle","📦"],
+ ["a banana peel","organic","🍌"],
+ ["a used tissue","general","🧻"]
+];
+let wi=0;
+function sortWaste(ans){
+ const item=wastes[wi], f=document.getElementById('wasteFeedback');
+ if(ans===item[1]){score+=5;f.textContent='✅ Correct! +5 Eco Points';}
+ else f.textContent='❌ Try again — think about what the item is made of.';
+ document.getElementById('score').textContent=score;
+ if(ans===item[1]){
+  wi=(wi+1)%wastes.length;
+  setTimeout(()=>{document.getElementById('wasteText').textContent='Where should '+item[2]+' '+wastes[wi][0]+' go?';f.textContent='';},600);
+ }
+}
+loadQuiz();
+</script>
+</body>
+</html>
